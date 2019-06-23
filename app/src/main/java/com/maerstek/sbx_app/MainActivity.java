@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onClickSendButton(){
         String text = questionText.getText().toString();
-        String answer = "Ok !";
+        String answer = AI.getAnswer(text);
 
         chatWindow.append(">>> " + text + "\n");
         chatWindow.append("<<< " + answer + "\n");
